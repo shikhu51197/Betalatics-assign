@@ -46,11 +46,11 @@
 ---
  | Serial No            | Feature                                                              |
 | ----------------- | ------------------------
-| 1 | User login,  upload profile page|
+| 1 | Search favourite npm package page|
 | 2 | Home Page Design, responsive design |
-| 3 |Create Project, Show Project list  |
-| 4 | Upload Project, Edit & delete Project|
-| 5 | Dashboard page general & display  |
+| 3 | Create favorite, Show favourite list  |
+| 4 | Upload favourite, Edit & delete favorite|
+| 5 | view favourite page   |
 
 
 ---
@@ -68,7 +68,7 @@
 
 ⭕Steps to use our project:
 ---
-![29013785_7450173](https://github.com/shikhu51197/zuraventureAssign/assets/107506646/60f740af-85e2-4a48-8bf9-c76acaf9c3d1)
+
 
 Betalatics  Application lets you  add favourites, show a favourite list, search for npm packages and update, and delete favourites.
 
