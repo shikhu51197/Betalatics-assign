@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Routes, Route } from "react-router-dom";
+import AddFavoritePage from "./Components/AddFavoritePage";
+import FavoritesTablePage from "./Components/FavoriteTablePage";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+interface Favorite {
+  id: string;
+  packageName: string;
+  favoriteReason: string;
 }
+
+const App: React.FC = () => {
+  const [favorites, setFavorites] = useState<Favorite[]>([]);
+
+  const handleAddFavorite = (favorite: Favorite) => {
+    setFavorites([...favorites, favorite]);
+  };
+
+  return (
+    <Routes>
+      <Route
+        path="/add"
+        element={<AddFavoritePage onSubmit={handleAddFavorite} />}
+      />
+
+      <Route
+        path="/"
+        element={
+      
+          <FavoritesTablePage
+            favorites={favorites}
+            setFavorites={setFavorites}
+          /> as React.ReactElement<{ favorites: Favorite[], setFavorites: React.Dispatch<React.SetStateAction<Favorite[]>> }>
+        }
+      />
+    </Routes>
+  );
+};
 
 export default App;

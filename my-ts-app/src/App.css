@@ -14,19 +14,31 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #4a5568; /* Dark grayish-blue background color */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-size: 1.5rem; /* Adjust font size */
+  color: #e2e8f0; /* Light grayish-blue text color */
+  padding: 20px; /* Add padding for better spacing */
 }
 
+/* Styling for links in the header */
 .App-link {
-  color: #61dafb;
+  color: #63b3ed; /* Blue link color */
+  text-decoration: none;
+  font-weight: bold; /* Make the links bold */
+  margin-left: 10px; /* Add some spacing between links */
+  transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+
+  /* Hover effect */
+  &:hover {
+    color: #4299e1; /* Darker blue on hover */
+  }
 }
+
 
 @keyframes App-logo-spin {
   from {
