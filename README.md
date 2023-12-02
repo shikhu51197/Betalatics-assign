@@ -24,7 +24,7 @@
   - `CSS3`
   - `JavaScript `
   - `ReactJS`
-  - `ReactJS`
+  - `TypeScript`
 
 - #### For Styling:-  
    - `Tailwind css `
@@ -96,7 +96,7 @@ Betalatics  Application lets you  add favourites, show a favourite list, search 
 graph TD;
  App-->HomePage
 HomePage-->favouritesPage
-favouritepage--> DashboardPage
+favouritespage--> DashboardPage
 
 
 ```
