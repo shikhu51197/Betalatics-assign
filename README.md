@@ -96,7 +96,7 @@ Betalatics  Application lets you  add favourites, show a favourite list, search 
 graph TD;
  App-->HomePage
 HomePage-->favouritesPage
-favouritespage--> DashboardPage
+favouritesPage--> DashboardPage
 
 
 ```
